@@ -1,5 +1,5 @@
 package edu.westga.comp2320.finance;
-	
+
 import java.io.IOException;
 
 import javafx.application.Application;
@@ -8,8 +8,14 @@ import javafx.stage.Stage;
 import javafx.scene.Scene;
 import javafx.scene.layout.Pane;
 
+/**
+ * This is the main class for the application
+ * 
+ * @author Deeksha Namani
+ * @version 11/21/2023
+ */
 public class Main extends Application {
-	
+
 	@Override
 	public void start(Stage primaryStage) {
 		try {
@@ -19,17 +25,17 @@ public class Main extends Application {
 			primaryStage.setScene(scene);
 			primaryStage.setTitle("Finance");
 			primaryStage.show();
-		} catch(IllegalStateException | IOException anException) {
+		} catch (IllegalStateException | IOException anException) {
 			anException.printStackTrace();
 		}
 	}
-	
+
 	private Pane loadGui() throws IOException {
 		FXMLLoader loader = new FXMLLoader();
 		loader.setLocation(getClass().getResource("view/FinanceGUI.fxml"));
 		return (Pane) loader.load();
 	}
-	
+
 	public static void main(String[] args) {
 		launch(args);
 	}

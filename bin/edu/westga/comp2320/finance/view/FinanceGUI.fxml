@@ -12,68 +12,49 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity"
-	minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0"
-	prefWidth="730.0" xmlns="http://javafx.com/javafx/20.0.1"
-	xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="730.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
 	<children>
 		<MenuBar prefHeight="25.0" prefWidth="730.0">
 			<menus>
 				<Menu mnemonicParsing="false" text="File">
 					<items>
-						<MenuItem fx:id="fileOpenMenuItem"
-							mnemonicParsing="false" text="Load Expenses From File" />
+						<MenuItem fx:id="fileOpenMenuItem" mnemonicParsing="false" text="Load Expenses From File" />
 					</items>
 				</Menu>
 				<Menu mnemonicParsing="false" text="Sort">
 					<items>
-						<MenuItem fx:id="sortByDateMenuItem"
-							mnemonicParsing="false" text="Sort Expenses By Date" />
-						<MenuItem fx:id="sortByPriceMenuItem"
-							mnemonicParsing="false" text="Sort Expenses By Price" />
-						<MenuItem fx:id="sortByCategoryAndPriceMenuItem"
-							mnemonicParsing="false"
-							text="Sort expenses by category and price" />
+						<MenuItem fx:id="sortByDateMenuItem" mnemonicParsing="false" text="Sort Expenses By Date" />
+						<MenuItem fx:id="sortByPriceMenuItem" mnemonicParsing="false" text="Sort Expenses By Price" />
+						<MenuItem fx:id="sortByCategoryAndPriceMenuItem" mnemonicParsing="false" text="Sort expenses by category and price" />
 					</items>
 				</Menu>
 				<Menu mnemonicParsing="false" text="Help">
 					<items>
-						<MenuItem fx:id="helpAboutMenuItem"
-							mnemonicParsing="false" text="About" />
+						<MenuItem fx:id="helpAboutMenuItem" mnemonicParsing="false" text="About" />
 					</items>
 				</Menu>
 			</menus>
 		</MenuBar>
 		<Label layoutX="30.0" layoutY="50.0" text="Date:" />
-		<DatePicker fx:id="expenseDatePicker" layoutX="99.0"
-			layoutY="46.0" prefHeight="25.0" prefWidth="171.0" />
+		<DatePicker fx:id="expenseDatePicker" layoutX="99.0" layoutY="46.0" prefHeight="25.0" prefWidth="171.0" />
 
 		<Label layoutX="30.0" layoutY="80.0" text="Amount:" />
-		<TextField fx:id="amountTextField" layoutX="99.0"
-			layoutY="76.0" prefHeight="25.0" prefWidth="171.0" />
+		<TextField fx:id="amountTextField" layoutX="99.0" layoutY="76.0" prefHeight="25.0" prefWidth="171.0" />
 
 		<Label layoutX="30.0" layoutY="110.0" text="Merchant:" />
-		<TextField fx:id="merchantTextField" layoutX="99.0"
-			layoutY="106.0" prefHeight="25.0" prefWidth="171.0" />
+		<TextField fx:id="merchantTextField" layoutX="99.0" layoutY="106.0" prefHeight="25.0" prefWidth="171.0" />
 
 
 		<Label layoutX="30.0" layoutY="140.0" text="Items:" />
-		<TextField fx:id="itemTextField" layoutX="99.0"
-			layoutY="136.0" prefHeight="25.0" prefWidth="171.0" />
+		<TextField fx:id="itemTextField" layoutX="99.0" layoutY="136.0" prefHeight="25.0" prefWidth="171.0" />
 
 		<Label layoutX="30.0" layoutY="170.0" text="Category:" />
-		<ComboBox fx:id="categoryComboBox" layoutX="99.0"
-			layoutY="166.0" prefHeight="25.0" prefWidth="171.0" />
-		<Button fx:id="addButton" layoutX="99.0" layoutY="205.0"
-			mnemonicParsing="false" text="Add" />
-		<Button fx:id="editButton" layoutX="165.0" layoutY="205.0"
-			mnemonicParsing="false" text="Edit" />
-		<Button fx:id="removeButton" layoutX="232.0" layoutY="205.0"
-			mnemonicParsing="false" text="Remove" />
-		<ListView layoutX="365.0" layoutY="45.0" prefHeight="157.0"
-			prefWidth="332.0" />
-		<Label fx:id="errorLabel" layoutX="371.0" layoutY="209.0"
-			prefHeight="25.0" prefWidth="323.0" textFill="#fb4a36">
+		<ComboBox fx:id="categoryComboBox" layoutX="99.0" layoutY="166.0" prefHeight="25.0" prefWidth="171.0" />
+		<Button fx:id="addButton" layoutX="99.0" layoutY="205.0" mnemonicParsing="false" text="Add" />
+		<Button fx:id="editButton" layoutX="165.0" layoutY="205.0" mnemonicParsing="false" text="Edit" />
+		<Button fx:id="removeButton" layoutX="232.0" layoutY="205.0" mnemonicParsing="false" text="Remove" />
+		<ListView layoutX="365.0" layoutY="45.0" prefHeight="157.0" prefWidth="332.0" />
+		<Label fx:id="errorLabel" layoutX="371.0" layoutY="209.0" prefHeight="25.0" prefWidth="323.0" textFill="#fb4a36">
 			<font>
 				<Font name="System Bold" size="12.0" />
 			</font>
